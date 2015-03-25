@@ -19,23 +19,18 @@
 
 BINARY = transfer
 
+PROJECT_TLD = ../..
+
 OBJS += ../../src/modules/led.o ../../src/modules/timer.o ../../src/modules/cdcacm.o ../../src/modules/cyrf6936.o
 OBJS += ../../src/modules/config.o ../../src/modules/ring.o
 
 LDSCRIPT = ../../stm32f103cbt6.ld
 
-BOARD?=2
-
-ifeq ($(BOARD),2)
-CFLAGS += -DBOARD_V1_0
-LDFLAGS += -Wl,-Ttext=0x8002000
-endif
-
 # Check if receiver or transmitter
 ifeq ($(RECEIVER),)
-CFLAGS += -DTRANSMITTER
+	CFLAGS += -DTRANSMITTER
 else
-CFLAGS += -DRECEIVER
+	CFLAGS += -DRECEIVER
 endif
 
 include ../../Makefile.include

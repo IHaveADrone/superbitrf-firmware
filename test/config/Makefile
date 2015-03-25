@@ -1,7 +1,7 @@
 ##
 ## This file is part of the superbitrf project.
 ##
-## Copyright (C) 2014 Piotr Esden-Tempski <piotr@esden.net>
+## Copyright (C) 2015 Freek van Tienen <freek.v.tienen@gmail.com>
 ##
 ## This library is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU Lesser General Public License as published by
@@ -17,9 +17,9 @@
 ## along with this library.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-BINARY = multi_usb_cdcacm
+BINARY = config
 PROJECT_TLD = ../..
 
-OBJS += ../../src/modules/led.o ../../src/modules/cdcacm.o ../../src/modules/ring.o
+OBJS += ../../src/modules/config.o ../../src/modules/console.o ../../src/modules/cdcacm.o ../../src/modules/ring.o
 
 include ../../Makefile.include
