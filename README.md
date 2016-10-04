@@ -1,5 +1,6 @@
 superbitrf-firmware
 ===================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/IHaveADrone/superbitrf-firmware?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Firmware for the superbit open source radio system. This is part of a paparazzi SuperbitRF project http://paparazzi.enac.fr/wiki/SuperbitRF.
 The SuperbitRF firmware is capable of transmitting, receiving and intercepting DSM2 and DSMX radio communication which is used by Spektrum transmitters and receivers. It is capable of adding a data communication next to the radio control communication for the Paparazzi autopilot.
